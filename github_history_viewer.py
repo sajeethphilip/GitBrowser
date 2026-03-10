@@ -1019,7 +1019,7 @@ def main():
                         dest_path = Path(dest)
 
                         if selected['type'] == 'file':
-                            repo_manager.download_file(repo, selected['path'], branch, dest_path)
+                            repo_manager.download_file_version(repo, selected['path'], branch, dest_path)
                         else:
                             # For directories, use sparse checkout
                             print("⚠️  Downloading folders requires git and might take a moment...")
